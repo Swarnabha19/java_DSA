@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=joinarr
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ array1\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=n1\ n2\ a1\ a2
+comment1.target=void\ delete(int,\ int,\ int[],\ int[])
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3
