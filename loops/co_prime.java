@@ -1,47 +1,37 @@
-import java.util.*;
-/**
- * Write a description of class prime here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class co_prime
-{
-   
-        public static void main(String arg[])
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
 
-        {
-        Scanner obj=new Scanner(System.in);
-        int m,i,j,n,f=1;
-        int count=0;
-        System.out.print("enter a: ");
-        n=obj.nextInt();
-        System.out.print("enter b: ");
-        m=obj.nextInt();
-        
-        if(n==1 || m==1)
-        {
-        System.out.println(n+" is neither prime nor composite");
-        System.exit(1);
-    }
-    if(m-n==2 || n-m==2)
-    {
-        for(i=2;i<=n/2;i++)
-        {
-            if((n%i==0) || (m%i==0))
-            {
-            f=0;
-            break;
+import java.util.*;
+
+class co_prime {
+
+    public static void main(String[] args) {
+        System.out.println("enter 2 nos:");
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        x = Math.abs(x);
+        y = Math.abs(y);
+        if (x == 0 && y == 0) {
+            System.out.println("undefined");
+            System.exit(0);
         }
+        if (x == 0 || y == 0) {
+            int gcd = x == 0 ? y : x;
+            System.out.println("co prime:" + gcd);
+            System.exit(0);
+        }
+        int min = x > y ? y : x;
+        int hcf = 0;
+        for (int i = 1; i <= min; i++) {
+            if ((x % i == 0) && (y % i == 0)) {
+                hcf = i;
             }
-            if(f==1)
-        System.out.println(n + " and " + m + " are twin prime");
-        else
-         System.out.println(n + " and " + m + " are not twin prime");
-        
         }
-        
+        if (hcf == 1) {
+            System.out.println(x + " and " + y + " are coprime");
+        } else {
+            System.out.println(x + " and " + y + " are not coprime hcf:" + hcf);
+        }
     }
 }
-
-

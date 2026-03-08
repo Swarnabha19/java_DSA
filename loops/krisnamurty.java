@@ -7,7 +7,7 @@ public class krisnamurty
     public static void main(String arg[])
     {
      Scanner obj=new Scanner(System.in);
-     int i,n,n1,j,k=1,f,sum=0;
+     int i,n,n1,k,f,sum=0;
      
      System.out.print("enter number: ");
      n=obj.nextInt();

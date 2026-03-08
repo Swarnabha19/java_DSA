@@ -4,7 +4,7 @@ public class sum_digit_number
     public static void main(String arg[])
     {
         Scanner obj=new Scanner(System.in);
-        int i,n,n1,k=1,sum=0;
+        int n,n1,k=1,sum=0;
         System.out.print("enter a number :");
         n=obj.nextInt();
         n1=n;

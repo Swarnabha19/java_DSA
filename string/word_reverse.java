@@ -12,7 +12,7 @@ class word_reverse
     }
     public static void main(String args[])
     {
-        int count=0;
+       // int count=0;
         //System.out.println("enteryour string:");
         //String st1=ob.nextLine();
         String st1="tojo sarker swarnabha rini sir baba tree";
