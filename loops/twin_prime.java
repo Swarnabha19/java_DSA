@@ -14,7 +14,7 @@ public class twin_prime {
             System.out.println("inputs must be > 1");
             return;
         }
-
+    
         int a = Math.min(n, m);
         int b = Math.max(n, m);
 
